@@ -1,0 +1,18 @@
+use local
+
+select * from dbo.Tbl_CONTACT
+-- Table Creation
+Create Table Tbl_CONTACT 
+(
+ Contact_Id INT NOT NULL IDENTITY(1,1),
+ FirstName VARCHAR(130) NOT NULL,
+ LastName VARCHAR(100) NOT NULL,
+ Email VARCHAR(100) NOT NULL,
+ [Address] VARCHAR(200) NOT NULL,
+ City VARCHAR(200) NOT NULL,
+ [State] VARCHAR(100) NOT NULL,
+ Country VARCHAR(100) NOT NULL,
+ PostalCode  VARCHAR(100) NOT NULL,
+
+ CONSTRAINT [PK_Contact_Id] PRIMARY KEY (Contact_Id)
+) 
